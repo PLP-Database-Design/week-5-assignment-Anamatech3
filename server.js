@@ -13,22 +13,6 @@ app.use(express.json());
 //app.use(cors());
 dotenv.config(); 
 
-// connection to the database 
-// const db = mysql.createConnection({
-//     host: process.env.DB_HOST,
-//     user: process.env.DB_USER,
-//     password: process.env.DB_PASSWORD,
-//     database: process.env.DB_NAME 
-// });
-
-// Check if there is a connection 
-//db.connect((err) => {
-    // If no connection 
-    //if(err) return console.log("Error connecting to MYSQL");
-
-    //If connect works successfully
-    //console.log("Connected to MYSQL as id: ", db.threadId); 
-//}) 
 
 // Create a MySQL connection pool using the .env variables
 const pool = mysql.createPool({
